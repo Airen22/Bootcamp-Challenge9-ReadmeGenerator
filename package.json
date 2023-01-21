@@ -1,0 +1,22 @@
+{
+  "name": "bootcamp-challenge9-readmegenerator",
+  "version": "1.0.0",
+  "description": "UT Austin Coding bootcamp Challenge - professional README generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Airen22/Bootcamp-Challenge9-ReadmeGenerator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Airen22/Bootcamp-Challenge9-ReadmeGenerator/issues"
+  },
+  "homepage": "https://github.com/Airen22/Bootcamp-Challenge9-ReadmeGenerator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
