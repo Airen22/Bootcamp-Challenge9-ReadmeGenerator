@@ -69,25 +69,27 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {
-//     fs.writeFile('READMEexample.md', generatemarkdown(),null,), (err) =>
-// err ? console.error(err) : console.log('README created!')
-// }
+function writeToFile(response) {
+    fs.writeFile('READMEexample.md', JSON.stringify(response), (err) =>
+    err ? console.error(err) : console.log('README created!')
+  );
+}
 // TODO: Create a function to initialize app
-function init() {
+function init(data) {
     inquirer
     .prompt(questions)
     .then((response) => {
         console.log(response)
+        writeToFile(response)
     })
-    
+   } 
 
-    // .then((response) => {
-    //     fs.appendFile('log.txt', JSON.stringify(response,null,),(err) =>
-    //     err ? console.error(err) : console.log('Entry logged!'))
-    //     writeToFile()
-    // })
-}
+    // .then((data) => {
+        // fs.appendFile('log.txt', JSON.stringify(response,null,),(err) =>
+        // err ? console.error(err) : console.log('Entry logged!'))
+
+    
+// }
 
 // Function call to initialize app
 init();
