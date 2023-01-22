@@ -1,1 +1,1 @@
-{"title":"test","description":"test","installation":"N>A","usage":"test","license":"MIT License","contributers":"test","tests":"test","github":"airen22","email":"test"}
+{"title":"test","description":"test","installation":"N>A","usage":"test","license":"MIT License","contributers":"test","tests":"test","github":"airen22","email":"test"}{"title":"test","description":"test","installation":"test","usage":"test","license":"Apache License 2.0","contributers":"test","tests":"test","github":"test","email":"test"}
