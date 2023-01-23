@@ -4,7 +4,8 @@ const fs = require('fs');
 function renderLicenseBadge(data) {
   if (`${data.license}` === "None") {
     return("")
-  } else {return (`<img src=("https://img.shields.io/badge/License-${data.license}-blue.svg")>\n`)
+  } else {var uriComponent = `${data.license}`.replace(/ /g, "_");
+  return (`<img src="https://img.shields.io/badge/License-${uriComponent}-blue.svg">\n`)
   }
 }
 
