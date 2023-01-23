@@ -1,7 +1,13 @@
 const fs = require('fs');
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(data) {
+  if (`${data.license}` === "None") {
+    return("")
+  } else {fs.appendFile('READMEexample.md', `(https://img.shields.io/badge/License-${data.license}-blue.svg\n`, (err) =>
+  err ? console.error(err) : console.log('Success!'))
+  }
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -23,12 +29,14 @@ function generateMarkdown(data) {
   var markdown =  `# ${data.title}\n
   ${data.description}\n
 
+  ${renderLicenseBadge(data)}
+
 ## Table of Contents\n
-*[Installation](#Installation)
-*[Usage](#Usage)
-*[Contributers](#Contributers)
-*[Tests](#Tests)
-*[Contact](#Contact)
+* [Installation](#Installation)\n
+* [Usage](#Usage)\n
+* [Contributers](#Contributers)\n
+* [Tests](#Tests)\n
+* [Contact](#Contact)\n
 
 
 ## Installation\n
