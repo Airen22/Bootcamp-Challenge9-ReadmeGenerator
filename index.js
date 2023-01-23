@@ -21,11 +21,11 @@ const questions = [
     message: 'Please add installation instructions (enter N/A if not applicable):',
     name: 'installation',
     },
-    // {
-    // type: 'input',
-    // message: 'What is the usage?',
-    // name: 'usage',
-    // },
+    {
+    type: 'input',
+    message: 'What is the usage?',
+    name: 'usage',
+    },
     {
     type: 'list',
     message: 'Please select license used:',
@@ -47,26 +47,26 @@ const questions = [
     'Other',
     ]
     },
-    // {
-    // type: 'input',
-    // message: 'Please add contributers:',
-    // name: 'contributers',
-    // },
-    // {
-    // type: 'input',
-    // message: 'Please add test:',
-    // name: 'tests',
-    // },
-    // {
-    // type: 'input',
-    // message: 'Please add your GitHub profile:',
-    // name: 'github',
-    // },
-    // {
-    // type: 'input',
-    // message: 'Please add your email:',
-    // name: 'email',
-    // }
+    {
+    type: 'input',
+    message: 'Please add contributers:',
+    name: 'contributers',
+    },
+    {
+    type: 'input',
+    message: 'Please add test:',
+    name: 'tests',
+    },
+    {
+    type: 'input',
+    message: 'Please add your GitHub profile:',
+    name: 'github',
+    },
+    {
+    type: 'input',
+    message: 'Please add your email:',
+    name: 'email',
+    }
 ];
 
 // TODO: Create a function to write README file
