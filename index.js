@@ -4,27 +4,37 @@ const fs = require('fs');
 const utils = require('./utils/generateMarkdown');
 const generateMarkdown = require('./utils/generateMarkdown');
 
+const confirmInput = (input, confirm) => {
+    if (input == "") {
+        return `Did you mean to leave this blank? Please enter N/A if there is no content for this section.`
+    } return true
+}
+
 // TODO: Create an array of questions for user input
 const questions = [    
     {
     type: 'input',
     message: 'What is the tile?',
     name: 'title',
+    validate: confirmInput
     },
     {
     type: 'input',
     message: 'What is the description?',
     name: 'description',
+    validate: confirmInput
     },
     {
     type: 'input',
     message: 'Please add installation instructions (enter N/A if not applicable):',
     name: 'installation',
+    validate: confirmInput
     },
     {
     type: 'input',
     message: 'What is the usage?',
     name: 'usage',
+    validate: confirmInput
     },
     {
     type: 'list',
@@ -43,29 +53,32 @@ const questions = [
     'GNU Lesser General Public License v2.1',
     'MIT License',
     'Mozilla Public License 2.0',
-    'The Unlicense',
-    'Other',
+    'The Unlicense'
     ]
     },
     {
     type: 'input',
     message: 'Please add contributers:',
     name: 'contributers',
+    validate: confirmInput
     },
     {
     type: 'input',
     message: 'Please add test:',
     name: 'tests',
+    validate: confirmInput
     },
     {
     type: 'input',
     message: 'Please add your GitHub profile:',
     name: 'github',
+    validate: confirmInput
     },
     {
     type: 'input',
     message: 'Please add your email:',
     name: 'email',
+    validate: confirmInput
     }
 ];
 
