@@ -15,8 +15,8 @@ Open index.js in the integrated terminal and run "node index.js"
 Then follow the prompts to add content to your README. 
 
 
-The  video included in the assets/images folder demonstrates how it works
-
+The video below demonstrates how it works and is alos included in teh assets folder:
+("https://drive.google.com/file/d/1RaelW4loUR5YKHCDYpFOl51tmsiMYW_n/view")
 
 ## Credits
 
